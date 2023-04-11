@@ -1,0 +1,238 @@
+
+<style>
+  .custom-btn {
+      width: 130px;
+      height: 40px;
+      color: #fff;
+      border-radius: 5px;
+      padding: 10px 25px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 500;
+      background: transparent;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      display: inline-block;
+       box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+       7px 7px 20px 0px rgba(0,0,0,.1),
+       4px 4px 5px 0px rgba(0,0,0,.1);
+      outline: none;
+    
+    }
+    .btn-6 {
+      background: rgb(247,150,192);
+    background: radial-gradient(circle, rgba(247,150,192,1) 0%, rgba(118,174,241,1) 100%);
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+    .btn-6 span {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .btn-6:before,
+    .btn-6:after {
+      position: absolute;
+      content: "";
+      height: 0%;
+      width: 1px;
+     box-shadow:
+       -1px -1px 20px 0px rgba(255,255,255,1),
+       -4px -4px 5px 0px rgba(255,255,255,1),
+       7px 7px 20px 0px rgba(0,0,0,.4),
+       4px 4px 5px 0px rgba(0,0,0,.3);
+    }
+    .btn-6:before {
+      right: 0;
+      top: 0;
+      transition: all 500ms ease;
+    }
+    .btn-6:after {
+      left: 0;
+      bottom: 0;
+      transition: all 500ms ease;
+    }
+    .btn-6:hover{
+      background: transparent;
+      color: #76aef1;
+      box-shadow: none;
+    }
+    .btn-6:hover:before {
+      transition: all 500ms ease;
+      height: 100%;
+    }
+    .btn-6:hover:after {
+      transition: all 500ms ease;
+      height: 100%;
+    }
+    .btn-6 span:before,
+    .btn-6 span:after {
+      position: absolute;
+      content: "";
+      box-shadow:
+       -1px -1px 20px 0px rgba(255,255,255,1),
+       -4px -4px 5px 0px rgba(255,255,255,1),
+       7px 7px 20px 0px rgba(0,0,0,.4),
+       4px 4px 5px 0px rgba(0,0,0,.3);
+    }
+    .btn-6 span:before {
+      left: 0;
+      top: 0;
+      width: 0%;
+      height: .5px;
+      transition: all 500ms ease;
+    }
+    .btn-6 span:after {
+      right: 0;
+      bottom: 0;
+      width: 0%;
+      height: .5px;
+      transition: all 500ms ease;
+    }
+    .btn-6 span:hover:before {
+      width: 100%;
+    }
+    .btn-6 span:hover:after {
+      width: 100%;
+    }
+
+  .soya-pinterest {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+.btn-8 {
+  background-color: #ffcee5;
+background-image: linear-gradient(315deg, #f0ecfc 0%, #fb97d7 64%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-8 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-8:before,
+.btn-8:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #eaaae0;
+  /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
+  transition: all 0.3s ease;
+}
+.btn-8:before{
+   height: 0%;
+   width: 2px;
+}
+.btn-8:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-8:hover:before {
+  height: 100%;
+}
+.btn-8:hover:after {
+  width: 100%;
+}
+.btn-8:hover{
+  background: transparent;
+}
+.btn-8 span:hover{
+  color: #e07db7;
+}
+.btn-8 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-8 span:after {
+  height: 2px;
+  width: 0%;
+}
+.btn-8 span:hover:before {
+  height: 100%;
+}
+.btn-8 span:hover:after {
+  width: 100%;
+}
+  .soya-tiktok {
+    width: 130px;
+    height: 40px;
+    color:#fff;
+    cursor:pointer;
+    background: transparent;
+    background-color: #8366e1;
+    padding: 10px 25px;
+    font-family:'lato', sans-serif;
+    font-weight: 500;
+    transition: opacity 1s;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.258);
+    border: none;
+    border-radius:20px;
+    border-bottom: #5e47a7;
+  
+  }
+  .soya-tiktok:hover {
+    opacity: 0.75;
+    border-bottom: #5e47a7;
+  
+ }
+  button:focus {
+        background-color:  rgba(247,150,192,0.3);
+        background: linear-gradient(rgb(153, 115, 220) 0%, rgb(223, 162, 231) 100%);
+    }
+    button:hover:not(:focus) {
+
+        transition: transform 0.5s ease 1s;
+        transform: translateX(0);
+    }
+.soya-tiktok:active{
+  opacity: 0.95;
+  background: rgb(247,150,192);
+    background: linear-gradient(rgb(153, 115, 220) 0%, rgb(223, 162, 231) 100%);
+
+}
+
+  
+
+  }
+    </style>
+
+
+    <button
+     class="custom-btn btn-6"><a href="https://instagram.com/desperate_inspiration?igshid=ZDdkNTZiNTM="target=_blank style="text-decoration: none; color: inherit;">
+      <span>My instagram</span></a>
+    </button>
+
+    <button
+    class="soya-tiktok"><a href="https://www.tiktok.com/@soya.bat?_t=8bPoLeWP326&_r=1" target="_blank" style="text-decoration: none ; color: inherit;">
+     <span>My tiktok</span></a>
+   </button>
+
+    <button
+     class="soya-pinterest btn-8"><a href= "https://pin.it/3HRR6VR" target=_blank style="text-decoration: none; color: inherit;">
+      <span>My Pinterest</span></a>
+    </button>
+
+   
